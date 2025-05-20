@@ -14,7 +14,7 @@ public class ComportamientoAgresivo implements EstrategiaBatalla {
             int Dañoparcial = Math.max(enemigo.getDefensa()-daño, 0);
             enemigo.reducirVida(daño);
             if(Dañoparcial >0){
-                System.out.println(criatura.getNombre()+" ataca violentamente causando "+daño+" puntos de daño a "+enemigo.getNombre());
+                System.out.println(criatura.getNombre()+" ataca violentamente causando "+Dañoparcial+" puntos de daño a "+enemigo.getNombre());
             }
             else if(Dañoparcial <=0){
                 System.out.println(criatura.getNombre()+" causo 0 daño a "+enemigo.getNombre());
